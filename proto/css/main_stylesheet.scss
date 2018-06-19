@@ -1,0 +1,53 @@
+/*author: yvette beausoleil*/
+
+//variables - colour palette
+$main-colour: #ffca7b;
+$light-shades: #ffedbf;
+$light-accent: #eba080;
+$dark-accent: #ff7251;
+$dark-shades: #9b2948;
+
+//mixins
+@mixin gradient-background{
+    background: linear-gradient(160deg, $dark-accent 15%, $light-accent 45%);
+}
+
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+
+/* CSS Document */
+/*desktop view*/
+@media screen and (min-width:1000px){
+    html {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+    *, *:before, *:after {
+        -webkit-box-sizing: inherit;
+                box-sizing: inherit;
+    }
+
+    header{
+        @include gradient-background();
+        padding: 20px;
+    }
+
+    h1{
+        font-size:3vw;
+        font-family:'Bitter', 'serif';
+    }
+
+    h3{
+        font-size:2vw;
+        font-family:'Bitter', 'serif';
+    }
+
+    .header-site{
+        color:$dark-shades;
+    }
+
+    .header-site:hover{
+        color:$dark-shades;
+    }
+}

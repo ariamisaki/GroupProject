@@ -1,0 +1,4 @@
+/*import multiple stylesheets*/
+@import url("main_stylesheet.css");
+@import url("mobile_stylesheet.css");
+@import url("printer_stylesheet.css");
