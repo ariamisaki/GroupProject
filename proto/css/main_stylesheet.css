@@ -12,15 +12,15 @@
     box-sizing: inherit;
   }
   body {
-    background-color: #ffedbf;
     font-family: 'Bitter', 'serif';
+    background-color: #F6F6F5;
   }
   header {
-    background: linear-gradient(160deg, #eba080 15%, #ffca7b 95%);
+    background: linear-gradient(160deg, #eba080 15%, #ffca7a 95%);
     padding: 20px;
   }
   footer {
-    background: linear-gradient(160deg, #eba080 15%, #ffca7b 95%);
+    background: linear-gradient(160deg, #eba080 15%, #ffca7a 95%);
   }
   h1 {
     font-size: 3vw;
@@ -31,7 +31,20 @@
     font-family: 'Bitter', 'serif';
   }
   nav {
-    background-color: #ffca7b;
+    background-color: #ffca7a;
+  }
+  main {
+    background-color: #ffedbf;
+    width: 80%;
+  }
+  a {
+    color: #ff7251;
+  }
+  a:hover {
+    color: #9b2948;
+  }
+  .footer-list li {
+    list-style-type: none;
   }
   .card {
     width: 300px;
@@ -55,7 +68,7 @@
   }
   .btn-primary:hover {
     background-color: #9b2948;
-    border-color: #eba080;
+    border-color: #9b2948;
   }
   .header-site {
     color: #9b2948;
@@ -78,6 +91,10 @@
   }
   .dropdown-item:hover {
     background-color: #eba080;
+    color: #9b2948;
+  }
+  #footer-heading {
+    text-align: center;
     color: #9b2948;
   }
 }

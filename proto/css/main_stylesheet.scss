@@ -1,7 +1,7 @@
 /*author: yvette beausoleil*/
 
 //variables - colour palette
-$main-colour: #ffca7b;
+$main-colour: hsl(36, 100%, 74%);
 $light-shades: #ffedbf;
 $light-accent: #eba080;
 $dark-accent: #ff7251;
@@ -29,9 +29,8 @@ $dark-shades: #9b2948;
     }
 
     body{
-        background-color:$light-shades;
         font-family:'Bitter', 'serif';
-
+        background-color:#F6F6F5;
     }
 
     header{
@@ -58,7 +57,20 @@ $dark-shades: #9b2948;
     }
 
     main{
-        background-color: white;
+        background-color:$light-shades;
+        width:80%;
+    }
+
+    a{
+        color:$dark-accent;
+    }
+
+    a:hover{
+        color:$dark-shades;
+    }
+
+    .footer-list li{
+        list-style-type: none;
     }
 
     .card{
@@ -86,7 +98,7 @@ $dark-shades: #9b2948;
 
     .btn-primary:hover{
         background-color:$dark-shades;
-        border-color:$$dark-shades;
+        border-color:$dark-shades;
     }
 
     .header-site{
@@ -117,5 +129,10 @@ $dark-shades: #9b2948;
     .dropdown-item:hover{
         background-color: $light-accent;
         color:$dark-shades
+    }
+
+    #footer-heading{
+        text-align: center;
+        color:$dark-shades;
     }
 }
