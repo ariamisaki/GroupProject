@@ -11,9 +11,16 @@
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
   }
+  body {
+    background-color: #ffedbf;
+    font-family: 'Bitter', 'serif';
+  }
   header {
-    background: linear-gradient(160deg, #ff7251 15%, #eba080 45%);
+    background: linear-gradient(160deg, #eba080 15%, #ffca7b 95%);
     padding: 20px;
+  }
+  footer {
+    background: linear-gradient(160deg, #eba080 15%, #ffca7b 95%);
   }
   h1 {
     font-size: 3vw;
@@ -23,10 +30,54 @@
     font-size: 2vw;
     font-family: 'Bitter', 'serif';
   }
+  nav {
+    background-color: #ffca7b;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #9b2948;
+  }
+  .btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px;
+  }
+  .btn-primary {
+    background-color: #eba080;
+    border-color: #eba080;
+  }
+  .btn-primary:hover {
+    background-color: #9b2948;
+    border-color: #eba080;
+  }
   .header-site {
     color: #9b2948;
   }
   .header-site:hover {
+    color: #9b2948;
+  }
+  .nav-item a {
+    color: #9b2948;
+  }
+  .nav-link:hover {
+    background-color: #eba080;
+  }
+  .nav-pills .show > .nav-link {
+    background-color: #9b2948;
+    color: #ffedbf;
+  }
+  .dropdown-menu {
+    background-color: #ffedbf;
+  }
+  .dropdown-item:hover {
+    background-color: #eba080;
     color: #9b2948;
   }
 }

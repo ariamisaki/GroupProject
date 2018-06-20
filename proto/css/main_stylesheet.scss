@@ -9,7 +9,7 @@ $dark-shades: #9b2948;
 
 //mixins
 @mixin gradient-background{
-    background: linear-gradient(160deg, $dark-accent 15%, $light-accent 45%);
+    background: linear-gradient(160deg, $light-accent 15%, $main-colour 95%);
 }
 
 //fonts
@@ -21,16 +21,26 @@ $dark-shades: #9b2948;
     html {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-      }
+    }
 
     *, *:before, *:after {
         -webkit-box-sizing: inherit;
                 box-sizing: inherit;
     }
 
+    body{
+        background-color:$light-shades;
+        font-family:'Bitter', 'serif';
+
+    }
+
     header{
         @include gradient-background();
         padding: 20px;
+    }
+
+    footer{
+        @include gradient-background();
     }
 
     h1{
@@ -43,11 +53,69 @@ $dark-shades: #9b2948;
         font-family:'Bitter', 'serif';
     }
 
+    nav{
+        background-color:$main-colour;
+    }
+
+    main{
+        background-color: white;
+    }
+
+    .card{
+        width:300px;
+        height:300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color:$dark-shades;
+    }
+
+    .btn{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin:15px;
+    }
+
+    .btn-primary{
+        background-color:$light-accent;
+        border-color:$light-accent;
+    }
+
+    .btn-primary:hover{
+        background-color:$dark-shades;
+        border-color:$$dark-shades;
+    }
+
     .header-site{
         color:$dark-shades;
     }
 
     .header-site:hover{
         color:$dark-shades;
+    }
+
+    .nav-item a{
+        color:$dark-shades;
+    }
+
+    .nav-link:hover {
+        background-color: $light-accent;
+    }
+
+    .nav-pills .show>.nav-link{
+        background-color:$dark-shades;
+        color:$light-shades;
+    }
+
+    .dropdown-menu{
+        background-color:$light-shades;
+    }
+
+    .dropdown-item:hover{
+        background-color: $light-accent;
+        color:$dark-shades
     }
 }
