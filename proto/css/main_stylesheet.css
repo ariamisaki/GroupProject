@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
 /* CSS Document */
 /*desktop view*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 990px) {
   html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -29,6 +29,7 @@
   h3 {
     font-size: 2vw;
     font-family: 'Bitter', 'serif';
+    padding-top: 10px;
   }
   nav {
     background-color: #ffca7a;
@@ -70,11 +71,23 @@
     background-color: #9b2948;
     border-color: #9b2948;
   }
+  .btn-outline-success {
+    color: #9b2948;
+    border-color: #9b2948;
+  }
+  .btn-outline-success:hover {
+    color: #ff7251;
+    border-color: #ff7251;
+    background-color: #ffca7a;
+  }
   .header-site {
     color: #9b2948;
   }
   .header-site:hover {
     color: #9b2948;
+  }
+  .navbar-light {
+    background-color: #ffca7a !important;
   }
   .nav-item a {
     color: #9b2948;
