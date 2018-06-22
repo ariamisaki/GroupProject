@@ -31,6 +31,15 @@
     font-family: 'Bitter', 'serif';
     padding-top: 10px;
   }
+  h2 {
+    padding: 5px;
+    background-color: #ffca7a;
+  }
+  h2 > button {
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+  }
   nav {
     background-color: #ffca7a;
   }
@@ -40,6 +49,9 @@
   }
   a {
     color: #ff7251;
+  }
+  section {
+    padding: 5px;
   }
   a:hover {
     color: #9b2948;

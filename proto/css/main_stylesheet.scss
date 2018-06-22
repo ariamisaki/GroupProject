@@ -53,6 +53,17 @@ $dark-shades: #9b2948;
         padding-top:10px;
     }
 
+    h2{
+        padding:5px;
+        background-color:$main-colour;
+    }
+
+    h2 > button{
+        float:right;
+        background-color:transparent;
+        border-color:transparent;
+    }
+
     nav{
         background-color:$main-colour;
     }
@@ -64,6 +75,10 @@ $dark-shades: #9b2948;
 
     a{
         color:$dark-accent;
+    }
+
+    section{
+        padding:5px;
     }
 
     a:hover{
