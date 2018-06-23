@@ -1,0 +1,13 @@
+/* Custom styles*/
+
+/* Selector */
+
+/* Class */
+.profile_img {
+    width: 150px;
+    height: auto;
+}
+/* Id */
+#sitemap_frame {
+    border: none;
+}
