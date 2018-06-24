@@ -22,6 +22,9 @@
   footer {
     background: linear-gradient(160deg, #eba080 15%, #ffca7a 95%);
   }
+  footer div ul a {
+    color: #9b2948 !important;
+  }
   h1 {
     font-size: 3vw;
     font-family: 'Bitter', 'serif';

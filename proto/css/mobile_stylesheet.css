@@ -62,6 +62,9 @@
   a {
     color: #ff7251;
   }
+  section {
+    padding: 5px;
+  }
   a:hover {
     color: #9b2948;
   }

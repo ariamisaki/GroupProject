@@ -42,6 +42,10 @@ $dark-shades: #9b2948;
         @include gradient-background();
     }
 
+    footer div ul a{
+        color:$dark-shades !important;
+    }
+
     h1{
         font-size:3vw;
         font-family:'Bitter', 'serif';
