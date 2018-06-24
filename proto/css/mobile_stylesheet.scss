@@ -8,12 +8,15 @@ $dark-shades: #9b2948;
 
 //mixins
 @mixin gradient-background{
-    background: linear-gradient(160deg, $dark-accent 15%, $light-accent 45%);
+    background: linear-gradient(160deg, $light-accent 15%, $main-colour 95%);
 }
+
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
 
 /* CSS Document */
 //mobile view
-@media screen and (max-width:1000px){
+@media screen and (max-width:990px){
     html{
 		-webkit-box-sizing: border-box;
 				box-sizing: border-box;
@@ -24,8 +27,146 @@ $dark-shades: #9b2948;
 				box-sizing: inherit;
       }
 
+    body{
+        font-family:'Bitter', 'serif';
+        background-color:#F6F6F5;
+    }
+
     header{
         @include gradient-background();
         padding: 20px;
+    }
+
+    img[src*="logo"]{
+        display:none;
+    }
+
+    img[src*="filezilla"]{
+       width: 350px;
+    }
+
+    li{
+        margin-left:-15px;
+    }
+
+    footer{
+        display:none;
+    }
+
+    h1{
+        font-size:20pt;
+        font-family:'Bitter', 'serif';
+    }
+
+    h3{
+        font-size:14pt;
+        font-family:'Bitter', 'serif';
+        padding-top:10px;
+    }
+
+    h2{
+        font-size:16pt;
+        padding:5px;
+        background-color:$main-colour;
+    }
+
+    h2 > button{
+        float:right;
+        background-color:transparent;
+        border-color:transparent;
+    }
+
+    nav{
+        background-color:$main-colour;
+    }
+
+    nav > div > ul > li{
+        margin-left:0 !important;
+
+    }
+    main{
+        background-color:$light-shades;
+        width:100%;
+    }
+
+    a{
+        color:$dark-accent;
+    }
+
+    section{
+        padding:5px;
+    }
+
+    a:hover{
+        color:$dark-shades;
+    }
+
+    .card{
+        width:300px;
+        height:300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color:$dark-shades;
+    }
+
+    .btn{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin:15px;
+    }
+
+    .btn-primary{
+        background-color:$light-accent;
+        border-color:$light-accent;
+    }
+
+    .btn-primary:hover{
+        background-color:$dark-shades;
+        border-color:$dark-shades;
+    }
+
+    .btn-outline-success{
+        color:$dark-shades;
+        border-color:$dark-shades;
+    }
+
+    .btn-outline-success:hover{
+        color:$dark-accent;
+        border-color:$dark-accent;
+        background-color:$main-colour;
+    }
+
+    .header-site{
+        color:$dark-shades;
+    }
+
+    .nav-item a{
+        color:$dark-shades;
+    }
+
+    .nav-link:hover {
+        background-color: $light-accent;
+    }
+
+    .nav-pills .show>.nav-link{
+        background-color:$dark-shades;
+        color:$light-shades;
+    }
+
+    .bg-light{
+        background-color:$main-colour !important;
+    }
+
+    .dropdown-menu{
+        background-color:$light-shades;
+    }
+
+    .dropdown-item:hover{
+        background-color: $light-accent;
+        color:$dark-shades
     }
 }

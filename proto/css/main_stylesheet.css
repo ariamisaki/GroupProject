@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
 /* CSS Document */
 /*desktop view*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 990px) {
   html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -11,9 +11,19 @@
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
   }
+  body {
+    font-family: 'Bitter', 'serif';
+    background-color: #F6F6F5;
+  }
   header {
-    background: linear-gradient(160deg, #ff7251 15%, #eba080 45%);
+    background: linear-gradient(160deg, #eba080 15%, #ffca7a 95%);
     padding: 20px;
+  }
+  footer {
+    background: linear-gradient(160deg, #eba080 15%, #ffca7a 95%);
+  }
+  footer div ul a {
+    color: #9b2948 !important;
   }
   h1 {
     font-size: 3vw;
@@ -22,11 +32,97 @@
   h3 {
     font-size: 2vw;
     font-family: 'Bitter', 'serif';
+    padding-top: 10px;
+  }
+  h2 {
+    padding: 5px;
+    background-color: #ffca7a;
+  }
+  h2 > button {
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  nav {
+    background-color: #ffca7a;
+  }
+  main {
+    background-color: #ffedbf;
+    width: 80%;
+  }
+  a {
+    color: #ff7251;
+  }
+  section {
+    padding: 5px;
+  }
+  a:hover {
+    color: #9b2948;
+  }
+  .footer-list li {
+    list-style-type: none;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #9b2948;
+  }
+  .btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px;
+  }
+  .btn-primary {
+    background-color: #eba080;
+    border-color: #eba080;
+  }
+  .btn-primary:hover {
+    background-color: #9b2948;
+    border-color: #9b2948;
+  }
+  .btn-outline-success {
+    color: #9b2948;
+    border-color: #9b2948;
+  }
+  .btn-outline-success:hover {
+    color: #ff7251;
+    border-color: #ff7251;
+    background-color: #ffca7a;
   }
   .header-site {
     color: #9b2948;
   }
   .header-site:hover {
+    color: #9b2948;
+  }
+  .navbar-light {
+    background-color: #ffca7a !important;
+  }
+  .nav-item a {
+    color: #9b2948;
+  }
+  .nav-link:hover {
+    background-color: #eba080;
+  }
+  .nav-pills .show > .nav-link {
+    background-color: #9b2948;
+    color: #ffedbf;
+  }
+  .dropdown-menu {
+    background-color: #ffedbf;
+  }
+  .dropdown-item:hover {
+    background-color: #eba080;
+    color: #9b2948;
+  }
+  #footer-heading {
+    text-align: center;
     color: #9b2948;
   }
 }
