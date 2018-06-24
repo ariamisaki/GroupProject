@@ -85,6 +85,17 @@ $dark-shades: #9b2948;
         padding:5px;
     }
 
+    figure{
+       margin-left:20px;
+       padding:10px 10px 10px 20px;
+       border-color:$dark-shades;
+    }
+
+    figcaption{
+        color:$dark-shades;
+        font-size:10pt;
+    }
+
     a:hover{
         color:$dark-shades;
     }
