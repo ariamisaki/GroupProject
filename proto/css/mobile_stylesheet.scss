@@ -41,8 +41,9 @@ $dark-shades: #9b2948;
         display:none;
     }
 
-    img[src*="filezilla"]{
-       width: 350px;
+    img[src$=".png"]{
+       width: 300px;
+
     }
 
     li{
@@ -96,6 +97,16 @@ $dark-shades: #9b2948;
     section{
         padding:5px;
     }
+
+    figure{
+        border-color:$dark-shades;
+        padding:5px;
+     }
+ 
+     figcaption{
+         color:$dark-shades;
+         font-size:10pt;
+     }
 
     a:hover{
         color:$dark-shades;
