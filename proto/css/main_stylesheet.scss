@@ -51,12 +51,6 @@ $dark-shades: #9b2948;
         font-family:'Bitter', 'serif';
     }
 
-    h3{
-        font-size:2vw;
-        font-family:'Bitter', 'serif';
-        padding-top:10px;
-    }
-
     h2{
         padding:5px;
         background-color:$main-colour;
@@ -66,6 +60,20 @@ $dark-shades: #9b2948;
         float:right;
         background-color:transparent;
         border-color:transparent;
+    }
+
+    h3{
+        font-size:2vw;
+        font-family:'Bitter', 'serif';
+        padding-top:10px;
+    }
+
+    h4{
+        display:inline;
+    }
+
+    form > input{
+        margin:5px;
     }
 
     nav{
@@ -88,7 +96,6 @@ $dark-shades: #9b2948;
     figure{
        margin-left:20px;
        padding:10px 10px 10px 20px;
-       border-color:$dark-shades;
     }
 
     figcaption{
@@ -105,14 +112,8 @@ $dark-shades: #9b2948;
     }
 
     .card{
-        width:300px;
-        height:300px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
         color:$dark-shades;
+        padding: 0px 0px 10px 0px;
     }
 
     .btn{
