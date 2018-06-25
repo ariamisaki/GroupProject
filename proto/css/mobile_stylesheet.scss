@@ -77,6 +77,14 @@ $dark-shades: #9b2948;
         border-color:transparent;
     }
 
+    h4{
+        display:none;
+    }
+
+    form > input{
+        margin:5px;
+    }
+
     nav{
         background-color:$main-colour;
     }
@@ -113,13 +121,6 @@ $dark-shades: #9b2948;
     }
 
     .card{
-        width:300px;
-        height:300px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
         color:$dark-shades;
     }
 
