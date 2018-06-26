@@ -1,7 +1,7 @@
 /*author: yvette beausoleil*/
 
 //variables - colour palette
-$main-colour: #ffca7b;
+$main-colour: hsl(36, 100%, 74%);
 $light-shades: #ffedbf;
 $light-accent: #eba080;
 $dark-accent: #ff7251;
@@ -9,7 +9,7 @@ $dark-shades: #9b2948;
 
 //mixins
 @mixin gradient-background{
-    background: linear-gradient(160deg, $dark-accent 15%, $light-accent 45%);
+    background: linear-gradient(160deg, $light-accent 15%, $main-colour 95%);
 }
 
 //fonts
@@ -17,15 +17,20 @@ $dark-shades: #9b2948;
 
 /* CSS Document */
 /*desktop view*/
-@media screen and (min-width:1000px){
+@media screen and (min-width:990px){
     html {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-      }
+    }
 
     *, *:before, *:after {
         -webkit-box-sizing: inherit;
                 box-sizing: inherit;
+    }
+
+    body{
+        font-family:'Bitter', 'serif';
+        background-color:#F6F6F5;
     }
 
     header{
@@ -33,14 +38,110 @@ $dark-shades: #9b2948;
         padding: 20px;
     }
 
+    footer{
+        @include gradient-background();
+    }
+
+    footer div ul a{
+        color:$dark-shades !important;
+    }
+
     h1{
         font-size:3vw;
         font-family:'Bitter', 'serif';
     }
 
+    h2{
+        padding:5px;
+        background-color:$main-colour;
+    }
+
+    h2 > button{
+        float:right;
+        background-color:transparent;
+        border-color:transparent;
+    }
+
     h3{
         font-size:2vw;
         font-family:'Bitter', 'serif';
+        padding-top:10px;
+    }
+
+    h4{
+        display:inline;
+    }
+
+    form > input{
+        margin:5px;
+    }
+
+    nav{
+        background-color:$main-colour;
+    }
+
+    main{
+        background-color:$light-shades;
+        width:80%;
+    }
+
+    a{
+        color:$dark-accent;
+    }
+
+    section{
+        padding:5px;
+    }
+
+    figure{
+       margin-left:20px;
+       padding:10px 10px 10px 20px;
+    }
+
+    figcaption{
+        color:$dark-shades;
+        font-size:10pt;
+    }
+
+    a:hover{
+        color:$dark-shades;
+    }
+
+    .footer-list li{
+        list-style-type: none;
+    }
+
+    .card{
+        color:$dark-shades;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .btn{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin:15px;
+    }
+
+    .btn-primary{
+        background-color:$light-accent;
+        border-color:$light-accent;
+    }
+
+    .btn-primary:hover{
+        background-color:$dark-shades;
+        border-color:$dark-shades;
+    }
+
+    .btn-outline-success{
+        color:$dark-shades;
+        border-color:$dark-shades;
+    }
+
+    .btn-outline-success:hover{
+        color:$dark-accent;
+        border-color:$dark-accent;
+        background-color:$main-colour;
     }
 
     .header-site{
@@ -48,6 +149,37 @@ $dark-shades: #9b2948;
     }
 
     .header-site:hover{
+        color:$dark-shades;
+    }
+
+    .navbar-light{
+        background-color:$main-colour !important;
+    }
+
+    .nav-item a{
+        color:$dark-shades;
+    }
+
+    .nav-link:hover {
+        background-color: $light-accent;
+    }
+
+    .nav-pills .show>.nav-link{
+        background-color:$dark-shades;
+        color:$light-shades;
+    }
+
+    .dropdown-menu{
+        background-color:$light-shades;
+    }
+
+    .dropdown-item:hover{
+        background-color: $light-accent;
+        color:$dark-shades
+    }
+
+    #footer-heading{
+        text-align: center;
         color:$dark-shades;
     }
 }
