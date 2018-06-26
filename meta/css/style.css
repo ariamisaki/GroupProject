@@ -1,13 +1,123 @@
+/**************************/
+/* Author: Soo            */
+/* Last update: 6/25/2018 */
+/**************************/
+
 /* Custom styles*/
 
-/* Selector */
+/*********** Selector ***********/
+h2 {
+    margin-top: 10px;
+}
 
-/* Class */
+/*********** Class **************/
 .profile_img {
     width: 150px;
     height: auto;
+    position: absolute;
+    top: 280px;
+    transform: translate(-50%, -50%);
 }
+
+.contribution_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.intro_desc {
+    margin-top: 300px;
+}
+
+/* Overwirte */
+.mastfoot {
+    margin-top: 10px;
+}
+
 /* Id */
 #sitemap_frame {
     border: none;
 }
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse
+    {
+        display: inline-flex!important;
+    }
+}
+
+/***** Custom button style ********/
+.btn-small:hover,
+.btn-small:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #aaaaaa;
+  border: .05rem solid #fff;
+}
+
+/***** Rationale flex box *********/
+.keyword {
+    background-color: #fae3d9;
+    margin-bottom: 5px;
+}
+
+.flex_box {
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex_box .reason_box {
+    width: 300px;
+    border: 0.5px solid #bbded6;
+    background-color: rgba(255, 255, 255, 0.225);
+    margin: 5px;
+    padding:20px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+/**** Profile image animation css from http://css3.bradshawenterprises.com/cfimg/ *****/
+@keyframes cf4FadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .cf4a img {
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    }
+  
+  .cf4a img:nth-of-type(1) {
+    animation-delay: 1s;
+  }
+  .cf4a img:nth-of-type(2) {
+    animation-delay: 3s;
+  }
+  .cf4a img:nth-of-type(3) {
+    animation-delay: 5s;
+  }
+  .cf4a img:nth-of-type(4) {
+    animation-delay: 7s;
+  }
+

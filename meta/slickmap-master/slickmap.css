@@ -52,7 +52,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 ------------------------------------------------------------ */
 
 body {
-	background: transparent;
+	background: #fff;
 	color: black;
 	padding: 40px;
 	font-family: Gotham, Helvetica, Arial, sans-serif;
