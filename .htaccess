@@ -1,0 +1,40 @@
+# .htaccess 
+# ------------
+# the .htaccess file customizes how the server will behave
+# comments in .htaccess begin with a number sign (like this line does)
+
+# ErrorDocument <errorNumber> <path>
+# Direct 'Page not found' errors to a specified page			
+ErrorDocument 404 /students/skwan34/proto/404.html
+
+# AddType and AddHandler can be instructed to parse .html files as .php
+AddType application/x-httpd-php .html
+AddHandler application/x-httpd-php .html
+
+#add this code to your .htaccess
+#the pipe delimited lists describe which file types to target
+#max-age=31536000 describes the duration of the cache in seconds
+	
+#cache image files for one year
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+	Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+#cache css and js files for one month
+<filesMatch ".(css|js)$">
+	Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+#if your html content is regularly updated, set a 1 day cache
+<filesMatch ".(html)$">
+	Header set Cache-Control "max-age=86400, public"
+</filesMatch>
+
+#if needed, you can also disable caching for specific file types
+<filesMatch ".(pdf)$">
+	Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+</filesMatch>
+
+
+
+
