@@ -14,14 +14,19 @@ h2 {
 .profile_img {
     width: 150px;
     height: auto;
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    top: 280px;
+    transform: translate(-50%, -50%);
 }
 
 .contribution_list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.intro_desc {
+    margin-top: 300px;
 }
 
 /* Overwirte */
@@ -104,15 +109,15 @@ h2 {
     }
   
   .cf4a img:nth-of-type(1) {
-    animation-delay: 0s;
+    animation-delay: 1s;
   }
   .cf4a img:nth-of-type(2) {
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
   .cf4a img:nth-of-type(3) {
-    animation-delay: 4s;
+    animation-delay: 5s;
   }
   .cf4a img:nth-of-type(4) {
-    animation-delay: 6s;
+    animation-delay: 7s;
   }
 
