@@ -122,6 +122,10 @@ footer p {
     list-style-type: none;
 }
 
+#sortable a:link {
+  color: black; 
+}
+
 /**** Profile image animation css from http://css3.bradshawenterprises.com/cfimg/ *****/
 @keyframes cf4FadeInOut {
     0% {
@@ -159,5 +163,10 @@ footer p {
   }
   .cf4a img:nth-of-type(4) {
     animation-delay: 7s;
+  }
+
+  /********* sitemap overwriting ************/
+  #primaryNav li a {
+    min-width: 100px;
   }
 
