@@ -10,13 +10,24 @@ h2 {
     margin-top: 10px;
 }
 
+footer p {
+  margin-top: 10px;
+}
+
 /*********** Class **************/
 .profile_img {
     width: 150px;
-    height: auto;
-    position: absolute;
-    top: 280px;
-    transform: translate(-50%, -50%);
+    height: auto;   
+}
+
+.yvette .profile_img {
+  position: absolute;
+  top: 280px;
+  transform: translate(-50%, -50%);
+}
+
+.soo .profile_img {
+  text-align: center;
 }
 
 .contribution_list {
@@ -25,8 +36,17 @@ h2 {
     padding: 0;
 }
 
-.intro_desc {
-    margin-top: 300px;
+.intro_desc_yvette {
+    margin-top: 280px;
+}
+
+.sns {
+  margin-top: 10px;
+}
+
+.sns img {
+  width: 50px;
+  height: auto;
 }
 
 /* Overwirte */
@@ -34,7 +54,11 @@ h2 {
     margin-top: 10px;
 }
 
-/* Id */
+.cover .btn-lg {
+  margin-left: -10px;
+}
+
+/************** Id *******************/
 #sitemap_frame {
     border: none;
 }
@@ -46,6 +70,17 @@ h2 {
     {
         display: inline-flex!important;
     }
+}
+
+
+@media (max-width: 530px) {
+  .yvette .profile_img {
+    top: 350px;
+  }
+
+  .intro_desc_yvette {
+    margin-top: 300px;
+  }
 }
 
 /***** Custom button style ********/
@@ -65,7 +100,8 @@ h2 {
 
 .flex_box {
     margin-top: 30px;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
+    margin-left: -50px; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
