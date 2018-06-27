@@ -16,7 +16,10 @@
 
 <body id="top">
 <!--header begins-->
-<header class="container-fluid">
+<?php
+	include("header.php");
+?>
+<!-- <header class="container-fluid">
 	<div class="row">
 		<div class="col-sm-2">
 			<a href="https://www.bcit.ca/"><img  src="images/logo.png" alt="BCIT logo" /></a><br />
@@ -28,11 +31,14 @@
 			<h3>Thursday Evening Class</h3>
 		</div>
 	</div>
-</header>
+</header> -->
 <!-- header ends -->
 
 <!-- navigation begins-->
-<nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+<?php
+	include("nav-main.php");
+?>
+<!-- <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 	</button>
@@ -69,7 +75,7 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
     </form>
   </div>
-</nav>
+</nav> -->
 <!-- navigation ends -->
 
 <!-- main content begins -->
@@ -484,7 +490,10 @@
 <!-- main content ends -->
 
 <!-- footer begins -->
-<footer class="container-fluid">
+<?php
+	include("footer.php");
+?>
+<!-- <footer class="container-fluid">
 	<div class="row">
 		<div class="col-sm-3" id="footer-heading">Lectures</div>
 	</div>
@@ -518,7 +527,7 @@
 		</ul>
 	  </div>
 	</div>
-</footer>
+</footer> -->
 <!-- footer ends -->
 
 <!-- JavaScript -->
