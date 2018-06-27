@@ -22,8 +22,12 @@ footer p {
 
 .yvette .profile_img {
   position: absolute;
-  top: 280px;
+  top: 150px;
   transform: translate(-50%, -50%);
+}
+
+.yvette {
+  position: relative;
 }
 
 .soo .profile_img {
@@ -37,7 +41,7 @@ footer p {
 }
 
 .intro_desc_yvette {
-    margin-top: 280px;
+    margin-top: 300px;
 }
 
 .sns {
@@ -75,11 +79,11 @@ footer p {
 
 @media (max-width: 530px) {
   .yvette .profile_img {
-    top: 350px;
+    top: 132px;
   }
 
   .intro_desc_yvette {
-    margin-top: 300px;
+    margin-top: 280px;
   }
 }
 
