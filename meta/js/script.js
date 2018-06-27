@@ -1,3 +1,8 @@
+/**************************/
+/* Author: Soo            */
+/* Last update: 6/25/2018 */
+/**************************/
+
 $( document ).ready(function() {
 
   $( function() {
