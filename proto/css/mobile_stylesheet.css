@@ -91,6 +91,9 @@
     align-items: center;
     margin: 15px;
   }
+  .printpdf {
+    display: none;
+  }
   .btn-primary {
     background-color: #eba080;
     border-color: #eba080;

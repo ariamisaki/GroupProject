@@ -107,6 +107,14 @@ $dark-shades: #9b2948;
         color:$dark-shades;
     }
 
+    button a{
+        color:black ;
+    }
+
+    button a:hover{
+        color:black ;
+    }
+
     .footer-list li{
         list-style-type: none;
     }
