@@ -73,6 +73,12 @@
   a:hover {
     color: #9b2948;
   }
+  button h4 a {
+    color: black;
+  }
+  button h4 a:hover {
+    color: black;
+  }
   .footer-list li {
     list-style-type: none;
   }

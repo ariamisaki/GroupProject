@@ -131,6 +131,10 @@ $dark-shades: #9b2948;
         margin:15px;
     }
 
+    .printpdf{
+        display:none;
+    }
+
     .btn-primary{
         background-color:$light-accent;
         border-color:$light-accent;
