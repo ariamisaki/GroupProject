@@ -62,12 +62,34 @@ footer p {
   margin-left: -10px;
 }
 
+.disabled_link {
+  pointer-events: none;
+}
+
 /************** Id *******************/
 #sitemap_frame {
     border: none;
 }
 
-/* Responsive */
+/********* sitemap overwriting ************/
+#primaryNav.col4 li {
+  min-width: 120px;
+}
+
+.cover #sitemap_frame {
+  height: 1000px;
+}
+
+#utilityNav {
+  float: left;
+  background: #ffffff url('../slickmap-master/images/vertical-line.png') center bottom no-repeat
+}
+
+#utilityNav li {
+  margin-bottom: 50px;
+}
+
+/************** Responsive *****************/
 
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-collapse
@@ -76,7 +98,6 @@ footer p {
     }
 }
 
-
 @media (max-width: 530px) {
   .yvette .profile_img {
     top: 132px;
@@ -84,6 +105,22 @@ footer p {
 
   .intro_desc_yvette {
     margin-top: 280px;
+  }
+
+  .cover #sitemap_frame {
+    height: 1300px;
+  }
+
+  #primaryNav li {
+    background: none;
+  }
+
+  #primaryNav li:last-child {
+    background: none;
+  }
+
+  #primaryNav #home {
+    background: none;
   }
 }
 
@@ -163,10 +200,5 @@ footer p {
   }
   .cf4a img:nth-of-type(4) {
     animation-delay: 7s;
-  }
-
-  /********* sitemap overwriting ************/
-  #primaryNav li a {
-    min-width: 100px;
   }
 
