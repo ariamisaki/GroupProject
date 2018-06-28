@@ -36,7 +36,15 @@
         padding:5px;
     }
 
+    #accordion > *{
+       display:block;
+    }
+
     h2 > button{
+        display:none;
+    }
+
+    .printpdf{
         display:none;
     }
 
