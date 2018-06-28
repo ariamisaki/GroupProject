@@ -49,8 +49,17 @@
     background-color: transparent;
     border-color: transparent;
   }
+  #quizbutton {
+    font-size: 3vw;
+  }
   h4 {
     display: none;
+  }
+  h5 {
+    font-size: 3vw;
+  }
+  p {
+    font-size: 3vw;
   }
   form > input {
     margin: 5px;
