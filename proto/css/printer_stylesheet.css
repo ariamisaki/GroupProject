@@ -27,9 +27,6 @@
   h2 {
     padding: 5px;
   }
-  #accordion > * {
-    display: block;
-  }
   h2 > button {
     display: none;
   }
